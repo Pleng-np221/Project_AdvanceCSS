@@ -13,7 +13,7 @@ const Navbar = () => {
           
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src="/logo.png" 
+              src="/logo.svg" 
               alt="WitchQuiz Logo" 
               className="w-8 h-8 md:w-10 md:h-10 object-contain"
             />
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </svg>
               ) : (
                 <img 
-                  src="/HiwBurger.png" 
+                  src="/HiwBurger.svg" 
                   alt="Menu" 
                   className="w-6 h-6 object-contain transition-transform duration-300" 
                 />

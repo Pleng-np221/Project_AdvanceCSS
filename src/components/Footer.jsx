@@ -7,7 +7,7 @@ const Footer = () => {
         
         <div className="bg-white rounded-[16px] md:rounded-[20px] p-2 md:p-3 flex flex-col items-center justify-center w-[90px] md:w-28 shadow-lg shrink-0">
           <img 
-            src="/logo.png" 
+            src="/logo.svg" 
             alt="WitchQuiz Logo" 
 
             className="w-7 h-7 md:w-9 md:h-9 object-contain mb-1 md:mb-1.5"
