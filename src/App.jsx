@@ -1,20 +1,26 @@
-import { Routes, Route, Link } from "react-router-dom"
-import Home from "./pages/Home"
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Quiz from "./pages/Quiz";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      
+      <Navbar />
 
-      <nav className="p-4 bg-gray-200 flex gap-4">
-        <Link to="/">Home</Link>
-      </nav>
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quiz" element={<Quiz />} />
+        </Routes>
+      </main>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Footer />
 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
