@@ -56,11 +56,11 @@ export default function Home() {
           <button
             className="
             mt-10 inline-flex items-center gap-4
-            px-8 py-4 rounded-2xl
+            px-8 py-4 rounded-3xl
 
             backdrop-blur-lg
             bg-white/10
-            border border-white/30
+            border-4 border-white/70
 
             text-white text-xl sm:text-2xl font-semibold
             shadow-lg
