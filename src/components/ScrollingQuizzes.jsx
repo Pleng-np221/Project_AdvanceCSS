@@ -6,12 +6,12 @@ export default function ScrollingQuizzes({header}) {
   const scrollRef = useRef(null);
 
   const quizzes = [
-    { title: "ควิซความรว้าก", categories: "Love", played: 324, loved: 98, creator: "klin" },
-    { title: "Anime Quiz", categories: "Anime", played: 512, loved: 210, creator: "yuki" },
-    { title: "Food Quiz", categories: "Food", played: 120, loved: 54, creator: "chef" },
-    { title: "Music Quiz", categories: "Music", played: 900, loved: 450, creator: "dj" },
-    { title: "Travel Quiz", categories: "Travel", played: 220, loved: 120, creator: "nomad" },
-    { title: "Food Quiz Part 2", categories: "Food", played: 88, loved: 64, creator: "chef" },
+    { id: 0,title: "ควิซความรว้าก", categories: "Love", played: 324, loved: 98, creator: "klin" },
+    { id: 1,title: "Anime Quiz", categories: "Anime", played: 512, loved: 210, creator: "yuki" },
+    { id: 2,title: "Food Quiz", categories: "Food", played: 120, loved: 54, creator: "chef" },
+    { id: 3,title: "Music Quiz", categories: "Music", played: 900, loved: 450, creator: "dj" },
+    { id: 4,title: "Travel Quiz", categories: "Travel", played: 220, loved: 120, creator: "nomad" },
+    { id: 5,title: "Food Quiz Part 2", categories: "Food", played: 88, loved: 64, creator: "chef" },
   ];
 
   const scroll = (direction) => {
