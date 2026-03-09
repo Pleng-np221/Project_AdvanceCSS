@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from "react";
 
 import { FaPlay, FaHeart, FaUser} from "react-icons/fa";
 import { MdHideImage } from "react-icons/md";
@@ -12,8 +13,9 @@ export default function QuizBox({
   loved,
   creator,
 }) {
+  const [imgError, setImgError] = useState(false);
   return (
-    <Link to={`/quiz/${id}`} className="block">
+    <Link to={`/quiz-detail/${id}`} className="block">
         <div className="quizbox relative 
         w-full max-w-[180px] sm:max-w-[240px] md:max-w-sm aspect-[4/5]
         rounded-3xl overflow-hidden 
@@ -36,14 +38,21 @@ export default function QuizBox({
             
             {/* img */}
             <div className="relative z-10 
-            w-full h-[55%] 
+            w-full aspect-[16/9]
             bg-gray-200 rounded-2xl 
             overflow-hidden 
             flex items-center justify-center">
-                {image ? (
-                    <img src={image} className="w-full h-full object-cover" />
+                {image && !imgError ? (
+                    <img
+                    src={image}
+                    alt={title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    onError={() => setImgError(true)}
+                    />
                 ) : (
-                    <MdHideImage size={80}/>
+                    <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                        <MdHideImage size={64} />
+                    </div>
                 )}
             </div>
 
