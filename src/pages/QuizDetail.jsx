@@ -11,6 +11,7 @@ export default function QuizDetail() {
 
   const { id } = useParams();
   const quiz = quizzes.find(q => q.id == id);
+  const randomQuizzes = [...quizzes].sort(() => Math.random() - 0.5);
   
   const [imgError, setImgError] = useState(false);
 
@@ -141,7 +142,9 @@ export default function QuizDetail() {
         </div>
         <div className="flex flex-col mt-6 mx-[12%]">
           <h1 className="text-3xl text-gray-600 font-bold my-5">Recommended Quizzes</h1>
-            <ScrollingQuizzes />
+          <ScrollingQuizzes
+            quizzes={randomQuizzes}
+          />
         </div>
       </div>
     );

@@ -1,9 +1,8 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import QuizBox from "./QuizBox";
-import { quizzes } from "../data/ex_quiz-details";
+import QuizBox from "./QuizBox2";
 
-export default function ScrollingQuizzes({header}) {
+export default function ScrollingQuizzes({ header, quizzes }) {
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {

@@ -1,5 +1,5 @@
 export const quizzes = [
-  { id: 0, title: "ควิซความรว้าก", categories: "Love", played: 324, loved: 98, creator: "klin", image: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2021-02/shutterstock_170935235.jpg?itok=a--9CLDx" },
+  { id: 0, title: "ควิซความรว้าก", categories: "Love", played: 111, loved: 99, creator: "klin", image: "https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2021-02/shutterstock_170935235.jpg?itok=a--9CLDx" },
 
   { id: 1, title: "Anime Quiz", categories: "Anime", played: 512, loved: 210, creator: "yuki"},
 
