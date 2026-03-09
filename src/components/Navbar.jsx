@@ -24,7 +24,7 @@ const Navbar = () => {
         
         <div className="flex justify-between items-center px-6 py-3 md:px-10 lg:px-14 md:py-4">
           
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="logo flex items-center gap-3">
             <img 
               src="/logo.svg" 
               alt="WitchQuiz Logo" 
