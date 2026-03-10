@@ -69,7 +69,7 @@ const Navbar = () => {
             </Link>
             
             <Link 
-              to="/quiz" 
+              to="#" onClick={handleUnderDevelopment}
               className="flex items-center gap-1.5 bg-white text-[#8942BF] px-6 py-2 rounded-full font-bold text-[15px] transition-all duration-300 ml-2 border border-[#d2a8ec] shadow-[inset_0_0_15px_4px_rgba(137,66,191,0.4),0_2px_10px_rgba(137,66,191,0.3)] hover:shadow-[inset_0_0_20px_5px_rgba(137,66,191,0.5),0_4px_15px_rgba(137,66,191,0.4)]"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

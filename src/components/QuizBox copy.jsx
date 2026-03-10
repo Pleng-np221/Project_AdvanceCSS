@@ -21,27 +21,16 @@ export default function QuizBox({
         w-full
     "
     >
-        <div
-        className="
-        quizbox relative
+        <div className="quizbox relative 
         w-full max-w-[260px] mx-auto
         flex flex-col
-        rounded-3xl overflow-hidden
-        bg-gradient-to-b from-purple-600 to-purple-700
-
-        p-4 z-0 text-white
-
-        bg-white/60 backdrop-blur-[15px]
-
-        shadow-[inset_0_0_20px_rgba(255,255,255,0.192),inset_0_0_5px_rgba(255,255,255,0.274),0_5px_5px_rgba(0,0,0,0.164)]
-
-        transition-all duration-500
-        "
-        >
+        rounded-3xl overflow-hidden 
+        bg-gradient-to-b from-purple-600 to-purple-700 
+        shadow-[inset_0_0_30px_rgba(255,255,255,1)] 
+        p-4 z-0 text-white">
 
             {/* deco */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                
             <div className="absolute -bottom-20 -right-16 w-48 h-48 rounded-full p-[30px] 
             bg-gradient-to-b from-white/60 to-white/10">
                     <div className="w-full h-full rounded-full bg-purple-700"></div>

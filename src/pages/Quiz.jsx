@@ -44,7 +44,7 @@ const Quiz = () => {
   return (
     <div className="page-purple pt-4 pb-12">
       
-      <div className="container flex flex-col">
+      <div className="container  flex flex-col">
         
         <div className="section-padding mb-4">
           <Link to="/" className="flex items-center gap-2 hover:text-purple-200 transition-colors w-fit font-bold text-lg md:text-xl">
@@ -103,7 +103,7 @@ const Quiz = () => {
           ))}
 
           <div className="flex justify-end mt-2 mb-8 px-2">
-            <Link to="/" className="flex items-center gap-2 font-bold text-lg md:text-xl hover:text-purple-200 transition-colors">
+            <Link to="/quiz-result" className="flex items-center gap-2 font-bold text-lg md:text-xl hover:text-purple-200 transition-colors">
               Finish
               <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />

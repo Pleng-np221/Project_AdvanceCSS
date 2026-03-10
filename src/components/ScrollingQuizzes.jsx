@@ -50,6 +50,7 @@ export default function ScrollingQuizzes({ header, quizzes }) {
         ref={scrollRef}
         className="flex items-start gap-6
         overflow-x-auto overflow-y-visible
+        no-scrollbar 
         scroll-smooth no-scrollbar
         pt-4 pb-4"
       >

@@ -29,7 +29,7 @@ export default function QuizDetail() {
   };
   if (!quiz) {
     return (
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen">
         <div className="quiz-header">
           <Link to="/"
             className="flex items-center gap-2 font-2xl font-semibold hover:opacity-80"
@@ -45,7 +45,7 @@ export default function QuizDetail() {
     )
   } else {
     return (
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen ">
 
         <div className="purple-main sticky 
         top-[7.2%] z-40
@@ -137,8 +137,8 @@ export default function QuizDetail() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col mt-6 mx-[12%]">
-          <h1 className="text-3xl text-gray-600 font-bold my-5">Recommended Quizzes</h1>
+        <div className="flex flex-col mt-6 mx-[12%] pb-10">
+          <h1 className="text-3xl text-white font-bold my-5">Recommended Quizzes</h1>
           <ScrollingQuizzes
             quizzes={randomQuizzes}
           />

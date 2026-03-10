@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import QuizDetail from "./pages/QuizDetail"
+import QuizResult from "./pages/QuizResult"
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/quiz-detail/:id" element={<QuizDetail />} />
+          <Route path="/quiz-result" element={<QuizResult />} />
         </Routes>
       </main>
 

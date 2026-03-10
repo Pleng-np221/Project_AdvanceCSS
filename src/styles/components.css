@@ -44,3 +44,12 @@
 .nav-btn{
   @apply flex items-center gap-1.5 text-black hover:text-[var(--purple-light)] font-bold text-[15px] transition-colors cursor-pointer
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
