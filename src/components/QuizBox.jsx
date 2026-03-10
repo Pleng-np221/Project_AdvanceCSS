@@ -43,7 +43,7 @@ export default function QuizBox({
             </div>
             
             {/* img */}
-            <div className="relative z-10 
+            <div className="quiz-img relative z-10 
             w-full aspect-[16/9]
             bg-gray-200 rounded-2xl 
             overflow-hidden 
@@ -52,7 +52,6 @@ export default function QuizBox({
                     <img
                     src={image}
                     alt={title}
-                    className="absolute inset-0 w-full h-full object-cover"
                     onError={() => setImgError(true)}
                     />
                 ) : (
@@ -65,12 +64,7 @@ export default function QuizBox({
             {/* content */}
             <div className="relative z-10 mt-[4%] space-y-[3%]">
 
-                <h2 className="
-                    font-bold leading-tight
-                    text-[clamp(0.85rem,2.5vw,1.1rem)]
-                ">
-                    {title}
-                </h2>
+                <h2>{title}</h2>
 
                 <span className="
                     inline-block
@@ -88,17 +82,17 @@ export default function QuizBox({
                 gap-x-[6%] gap-y-[0.3em]
                 ">
 
-                    <div className="flex items-center gap-[0.35em]">
+                    <div className="stat">
                         <FaPlay className="text-[0.7em]" />
                         {played}
                     </div>
 
-                    <div className="flex items-center gap-[0.35em]">
+                    <div className="stat">
                         <FaHeart className="text-[0.7em]" />
                         {loved}
                     </div>
 
-                    <div className="flex items-center gap-[0.35em]">
+                    <div className="stat">
                         <FaUser className="text-[0.7em]" />
                         {creator}
                     </div>

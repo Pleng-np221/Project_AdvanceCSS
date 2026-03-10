@@ -36,9 +36,7 @@ export default function QuizBox2({
         "
         >
         <div className="flex items-center justify-between">
-            <h2 className="font-bold text-lg leading-tight line-clamp-1">
-                {title}
-            </h2>
+            <h2>{title}</h2>
         </div>
 
         <div className="flex items-center justify-between">
@@ -46,17 +44,17 @@ export default function QuizBox2({
                 {categories}
             </span>
             <div className="flex px-1 items-center gap-3 text-xs whitespace-nowrap">
-                <div className="flex items-center gap-1">
+                <div className="stat2">
                     <FaPlay size={8} />
                     {played}
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="stat2">
                     <FaHeart size={8} />
                     {loved}
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="stat2">
                     <FaUser size={8} />
                     {creator}
                 </div>
@@ -65,12 +63,13 @@ export default function QuizBox2({
         </div>
 
         {/* img */}
-        <div className="relative z-10 w-full aspect-[16/9] bg-gray-200 overflow-hidden">
+        <div className="quiz-img 
+        relative z-10 w-full aspect-[16/9] 
+        bg-gray-200 overflow-hidden">
           {image && !imgError ? (
             <img
               src={image}
               alt={title}
-              className="absolute inset-0 w-full h-full object-cover"
               onError={() => setImgError(true)}
             />
           ) : (

@@ -1,0 +1,31 @@
+.purple-main {
+  background: var(--purple-main);
+}
+.purple-light {
+  background: var(--purple-light);
+}
+
+.page-purple {
+  background: var(--purple-main);
+  min-height: 100vh;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-inline: 2rem;
+  }
+}

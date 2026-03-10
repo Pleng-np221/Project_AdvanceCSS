@@ -30,9 +30,7 @@ export default function QuizDetail() {
   if (!quiz) {
     return (
       <div className="min-h-screen bg-gray-100">
-        <div className="bg-[#6b2a8c] sticky 
-        top-[7.2%] z-40
-        text-white/80 px-6 pt-[2.5%] pb-[1%]">
+        <div className="quiz-header">
           <Link to="/"
             className="flex items-center gap-2 font-2xl font-semibold hover:opacity-80"
           >
@@ -49,7 +47,7 @@ export default function QuizDetail() {
     return (
       <div className="min-h-screen bg-gray-100">
 
-        <div className="bg-[#6b2a8c] sticky 
+        <div className="purple-main sticky 
         top-[7.2%] z-40
         text-white/80 px-6 pt-[2.5%] pb-[1%]">
           <Link to="/"
@@ -66,7 +64,7 @@ export default function QuizDetail() {
             <div className="grid md:grid-cols-2">
 
               {/* img */}
-              <div className="relative md:h-full h-[240px]
+              <div className="quiz-img relative md:h-full h-[240px]
               bg-gray-200 rounded-2xl 
               overflow-hidden 
               flex items-center justify-center">
@@ -74,7 +72,6 @@ export default function QuizDetail() {
                     <img
                     src={quiz.image}
                     alt={quiz.title}
-                    className="absolute inset-0 w-full h-full object-cover"
                     onError={() => setImgError(true)}
                     />
                 ) : (
@@ -86,18 +83,18 @@ export default function QuizDetail() {
               <div className="p-8 flex flex-col">
 
                 <div className="flex flex-col space-y-2">
-                  <div className="flex items-center gap-1 font-semibold">
+                  <div className="stat font-semibold">
                     {/* <FaUser /> */}
                     {quiz.creator}
                   </div>
             
                   <div className="flex items-center gap-2 
                                   text-sm text-gray-500">
-                      <div className="flex items-center gap-1">
+                      <div className="stat">
                       <FaPlay size={12} />
                       {quiz.played}
                       </div>
-                      <div className="flex items-center gap-1">
+                      <div className="stat">
                       <FaHeart size={12} />
                       {quiz.loved}
                       </div>

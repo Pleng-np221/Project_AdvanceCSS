@@ -1,0 +1,46 @@
+.quizbox {
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.quizbox:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.25),
+        0 4px 10px rgba(0,0,0,0.15);
+    filter: brightness(1.08);
+    z-index: 20;
+}
+
+.quizbox h2 {
+  @apply block w-full
+          font-bold leading-tight
+          text-[clamp(0.85rem,2.5vw,1.1rem)]
+          truncate;
+}
+
+.quiz-header {
+  @apply bg-[var(--purple-main)] sticky top-[7.2%] z-40 text-white/80 px-6 pt-[2.5%] pb-[1%];
+}
+
+.quiz-img img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat2 {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-btn{
+  @apply flex items-center gap-1.5 text-black hover:text-[var(--purple-light)] font-bold text-[15px] transition-colors cursor-pointer
+}

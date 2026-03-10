@@ -42,11 +42,11 @@ const Quiz = () => {
   const letters = ['A', 'B', 'C', 'D'];
 
   return (
-    <div className="bg-[#6b2a8c] min-h-screen text-white font-sans flex flex-col pt-4 pb-12 w-full">
+    <div className="page-purple pt-4 pb-12">
       
-      <div className="w-full max-w-4xl mx-auto flex flex-col">
+      <div className="container flex flex-col">
         
-        <div className="w-full px-5 md:px-8 mb-4">
+        <div className="section-padding mb-4">
           <Link to="/" className="flex items-center gap-2 hover:text-purple-200 transition-colors w-fit font-bold text-lg md:text-xl">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 19l-7-7m0 0l7-7m-7 7h18" />

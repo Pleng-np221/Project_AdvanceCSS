@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[#6b2a8c] sticky top-0 z-50">
+    <div className="purple-main sticky top-0 z-50">
       
       <header className="bg-white mx-4 md:mx-6 lg:mx-8 rounded-b-[50px] md:rounded-b-[100px] shadow-md transition-all duration-300 relative z-40">
         
@@ -49,21 +49,21 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
-            <Link to="/" className="flex items-center gap-1.5 text-black hover:text-[#8942BF] font-bold text-[15px] transition-colors">
+            <Link to="/" className="nav-btn">
               Home
             </Link>
             
-            <Link to="#" onClick={handleUnderDevelopment} className="flex items-center gap-1.5 text-black hover:text-[#8942BF] font-bold text-[15px] transition-colors cursor-pointer">
+            <Link to="#" onClick={handleUnderDevelopment} className="nav-btn">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               Search
             </Link>
             
-            <Link to="#" onClick={handleUnderDevelopment} className="flex items-center gap-1.5 text-black hover:text-[#8942BF] font-bold text-[15px] transition-colors cursor-pointer">
+            <Link to="#" onClick={handleUnderDevelopment} className="nav-btn">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
               Join
             </Link>
             
-            <Link to="#" onClick={handleUnderDevelopment} className="flex items-center gap-1.5 text-black hover:text-[#8942BF] font-bold text-[15px] transition-colors cursor-pointer">
+            <Link to="#" onClick={handleUnderDevelopment} className="nav-btn">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
               Profile
             </Link>
