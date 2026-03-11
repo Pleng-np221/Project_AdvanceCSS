@@ -10,7 +10,7 @@ export default function QuizResult() {
   const time = "2:00";
 
   return (
-    <div className="min-h-fit  text-white p-8">
+    <div className="min-h-fit  text-white p-8 purple-main  overflow-hidden">
 
       {/* back */}
       <Link to="/" className="flex items-center gap-2 mb-8 opacity-80 hover:opacity-100">
@@ -29,7 +29,7 @@ export default function QuizResult() {
         px-6 sm:px-10 lg:px-20
       "
       >
-      <div class="card animated-border  flex items-center max-h-fit ">
+      <div class="card animated-border  flex items-center max-h-fit  ">
         <div class="card_title__container">
                 <div className="max-w-4xl mx-auto rounded-2xl p-8 flex items-center gap-20">
 
@@ -53,9 +53,11 @@ export default function QuizResult() {
                   stroke="url(#grad)"
                   strokeWidth="12"
                   fill="none"
-                  strokeDasharray="440"
-                  strokeDashoffset={440 - (440 * percent) / 100}
                   strokeLinecap="round"
+                  className="circle-progress"
+                  style={{
+                    "--target-offset": 440 - (440 * percent) / 100
+                  }}
                 />
 
                 <defs>
@@ -66,7 +68,7 @@ export default function QuizResult() {
                 </defs>
               </svg>
 
-              <div className="absolute inset-0 flex items-center justify-center text-3xl font-bold">
+              <div className="absolute inset-0 flex items-center justify-center text-3xl font-bold score-pop">
                 {percent}%
               </div>
 
@@ -131,10 +133,11 @@ export default function QuizResult() {
       "border-white/10";
 
     return(
-      <div
-        key={i}
-        className={`grid grid-cols-[1fr_80px_80px] items-center py-3 px-3 border rounded-lg mb-2 ${bg} hover:bg-white/10 transition`}
-      >
+        <div
+          key={i}
+          style={{ animationDelay: `${i * 0.15}s` }}
+          className={`leaderboard-row grid grid-cols-[1fr_80px_80px] items-center py-3 px-3 border rounded-lg mb-2 ${bg} hover:bg-white/10 transition`}
+        >
 
         {/* player */}
         <div className="flex items-center gap-3">
