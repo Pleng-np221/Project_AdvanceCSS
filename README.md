@@ -1,16 +1,7 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# WitchQuiz
+โครงงานพัฒนาเว็บไซต์ Prototype สำหรับทำควิซหรือแบบทดสอบเพื่อศึกษาการประยุกต์ใช้ความรู้จากรายวิชา Advance Scripting for Design โดยโครงงานนี้เน้นที่การพัฒนาในส่วน Frontend เท่านั้น ไม่มีการเชื่อมต่อฐานข้อมูล หรือ Backend
+## ขั้นตอนการใช้งานเว็บไซต์
+1. หลังทำการแตกไฟล์ เปิด command prompt ที่โฟลเดอร์นี้
+2. พิมพ์ ```npm install```
+3. พิมพ์ ```npm run dev```
+4. เปิดเว็บโปรเจคที่ http://localhost:5173
