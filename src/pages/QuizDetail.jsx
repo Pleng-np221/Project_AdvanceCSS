@@ -147,7 +147,7 @@ export default function QuizDetail() {
           </div>
         </div>
         <div className="flex flex-col mt-6 mx-[12%] pb-10">
-          <h1 className="text-3xl text-white font-bold my-5">Recommended Quizzes</h1>
+          <h1 className="text-3xl text-black font-bold my-5">Recommended Quizzes</h1>
           <ScrollingQuizzes
             quizzes={randomQuizzes}
           />
