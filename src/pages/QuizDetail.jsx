@@ -48,7 +48,7 @@ export default function QuizDetail() {
       <div className="min-h-screen ">
 
         <div className="purple-main sticky 
-        top-[7.2%] z-40
+        md:top-[7%] top-[9%] z-40
         text-white/80 px-6 pt-[2.5%] pb-[1%]">
           <Link to="/"
             className="flex items-center gap-2 font-2xl font-semibold hover:opacity-80"
